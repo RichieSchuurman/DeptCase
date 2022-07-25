@@ -4,8 +4,8 @@ import deptHero from "../assets/images/hero.png"
 
 function Hero() {
   return (
-    <Grid container className="hero">
-      <Grid item xs={12}>
+    <Grid className="hero">
+      <Grid item>
         <img className="hero-image" src={deptHero} alt="Dept hero"></img>
       </Grid>
       <Grid className="hero-text-box" item xs={12} sm={12} md={6} lg={6}>

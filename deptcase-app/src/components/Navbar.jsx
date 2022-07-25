@@ -9,6 +9,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Divider } from '@mui/material';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 
@@ -33,14 +34,15 @@ function Navbar(props) {
       <Box sx={{ flexGrow: 1 }}>
       <IconButton></IconButton>
       </Box>
+      
       <List>
         {navItemsMobile.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary={item} />
             </ListItemButton>
-          </ListItem>
-        ))}
+          </ListItem> 
+        ))}   
       </List>
     </Box>
   );

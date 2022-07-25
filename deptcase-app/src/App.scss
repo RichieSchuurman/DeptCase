@@ -30,17 +30,17 @@ $navigation-font-size: 18px;
   margin-left: 1rem;
 }
 
-.hero {
+.hero, .work {
   height: 100%;
   position: relative;
   overflow: hidden;
 
-  .hero-image {
+  .hero-image, .work-image {
     width: 100%;
     object-fit: cover;
   }
 
-  .hero-text-box  {
+  .hero-text-box, .work-text-box  {
     color: $main-text-color;
     padding: 5rem;
     position: absolute;
@@ -52,13 +52,32 @@ $navigation-font-size: 18px;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .hero-image {
-      aspect-ratio: 2/3;
+.work {
+  .small-header-left {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
+  .small-header-right {
+    text-align: right;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+  }
+  .small-header-left, .small-header-right {
+    color: #A3A3A3;
 
-    
-  
+    span {
+      color: #0E0E0E;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-image, .work-image {
+      aspect-ratio: 2/3;
+  } 
 }
 
 @media screen and (max-width: 360px) {
