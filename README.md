@@ -11,3 +11,4 @@ When the install is complete run **npm start**. This will start the local server
 - Better responsiveness.
 - Use local data to loop through the grid and show the different clientcards.
 - Implement a filter system.
+- Proper filled menu drawer.
