@@ -1,22 +1,23 @@
 import { Grid, Typography } from "@mui/material";
 import * as React from "react";
 import workTopLeft from "../assets/images/work1.png";
+import workTopRight from "../assets/images/work2.png";
 
-function Work() {
+function ClientCard() {
   return (
     <Grid container className="work">
-      <Grid className="small-header-box" item lg={6}>
+      <Grid className="small-header-box" item xs={6} sm={6} lg={6}>
         <Typography className="small-header-left" variant="h5" component="div">
           Show me <span>all work</span>
         </Typography>
       </Grid>
-      <Grid className="small-header-box" item lg={6}>
+      <Grid className="small-header-box" item xs={6} sm={6} lg={6}>
         <Typography className="small-header-right" variant="h5" component="div" sx={{ textAlign: "right" }}>
           in <span>all industries</span>
         </Typography>
       </Grid>
       <Grid item xs={12} sm={12} lg={6}>
-        <img className="work-image" src={workTopLeft} alt="Dept work"></img>
+        <img className="work-image" src={workTopLeft} alt="Dept work"/>
         <Grid className="work-text-box" item xs={12} sm={12} md={6} lg={6}>
           <Typography
             className="small-header"
@@ -33,7 +34,7 @@ function Work() {
       </Grid>
 
       <Grid item xs={12} sm={12} lg={6}>
-        <img className="work-image" src={workTopLeft} alt="Dept hero"></img>
+        <img className="work-image" src={workTopRight} alt="Dept hero" />
         <Grid className="work-text-box" item xs={12} sm={12} md={6} lg={6}>
           <Typography
             className="small-header"
@@ -52,4 +53,4 @@ function Work() {
   );
 }
 
-export default Work;
+export default ClientCard;

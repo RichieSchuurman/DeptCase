@@ -6,7 +6,7 @@ function Hero() {
   return (
     <Grid className="hero">
       <Grid item>
-        <img className="hero-image" src={deptHero} alt="Dept hero"></img>
+        <img className="hero-image" src={deptHero} alt="Dept hero"/>
       </Grid>
       <Grid className="hero-text-box" item xs={12} sm={12} md={6} lg={6}>
         <Typography className="small-header" variant="h5" component="div" sx={{ mb: 4}}>
