@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
-}
+$main-background-color: #121212;
+$main-text-color: #ffffff;
+$main-border-color: #ffffff;
+$navigation-font-size: 18px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.MuiTypography-root {
+  font-family: 'Lato', sans-serif !important;
 }
+.MuiAppBar-root.navigation {
+  background-color: $main-background-color;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .MuiToolbar-root.navigation-toolbar {
+    min-height: 115px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navigation .MuiLink-root {
+  color: $main-text-color;
+  font-family: 'Lato', sans-serif;
+  font-size: $navigation-font-size;
 }
 
-.App-link {
-  color: #61dafb;
+.drawer-navigation .MuiDrawer-paper {
+  background-color: $main-background-color;
+  color: $main-text-color;
+  padding-top: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.MuiIconButton-root.drawer-icon {
+  margin-left: 1rem;
+}
+
+.hero {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  .hero-image {
+    width: 100%;
+    object-fit: cover;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hero-text-box  {
+    color: $main-text-color;
+    padding: 5rem;
+    position: absolute;
+    bottom: 0;
+
+    .main-text {
+      font-size: 34px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-image {
+      aspect-ratio: 2/3;
+  }
+
+    
+  
+}
+
+@media screen and (max-width: 360px) {
+  .main-text {
+    font-size: 24px !important;
   }
 }
